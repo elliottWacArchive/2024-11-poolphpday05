@@ -2,8 +2,9 @@
 
 function my_print_session($key)
 {
-    session_start();
-    if ($_SESSION[$key]) {
+    if (isset($_SESSION[$key])) {
         echo $_SESSION[$key] . "\n\n";
+    } else {
+        array_key_exists($key, $_COOKIE);
     }
 }

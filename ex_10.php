@@ -15,3 +15,14 @@ function my_get_weird_info()
     }
     return null;
 }
+
+$_GET['nbr_elem'] = 5;
+$_GET["var1"] = "premier test";
+$_GET["var2"] = "deuxieme test";
+$_GET["var3"] = "dernier test";
+$_GET["directrice"] = "Sophie";
+$_GET["responsable"] = "Julien";
+$_GET["pangolin1"] = "Samy";
+$_GET["pangolin2"] = "Henri";
+
+echo my_get_weird_info();

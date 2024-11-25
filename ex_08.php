@@ -2,8 +2,9 @@
 
 function helix_post_finder()
 {
-    if ($_POST["phelix"]) {
+    if (isset($_POST["phelix"])) {
         return $_POST["phelix"];
+    } else {
+        return null;
     }
-    return null;
 }
