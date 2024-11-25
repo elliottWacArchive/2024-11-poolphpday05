@@ -2,8 +2,8 @@
 
 function my_get_weird_info()
 {
-    $max = $_GET["nbr_elem"];
     if (isset($_GET["nbr_elem"])) {
+        $max = $_GET["nbr_elem"];
         $i = 0;
         foreach ($_GET as $key => $val) {
             if ($i == $max) {
