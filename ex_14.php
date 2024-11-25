@@ -1,6 +1,7 @@
 <?php
 
-function display_names(...$args) {
+function display_names(...$args)
+{
     $script_name = basename($_SERVER['PHP_SELF']);
     $num_args = count($args);
     $pair = ($num_args % 2 == 0) ? 1 : 0;
