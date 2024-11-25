@@ -1,10 +1,8 @@
 <?php
 
-function get_execution_time()
+function calculerTempsExecution()
 {
-    $first = $_SERVER['REQUEST_TIME_FLOAT'];
-    $end = $_SERVER['REQUEST_TIME_FLOAT'];
-    echo $end - $first;
+    $start = microtime(true);
+    $time = $start - $_SERVER['REQUEST_TIME_FLOAT'];
+    return number_format($time, 7, '.', '');
 }
-
-get_execution_time();
