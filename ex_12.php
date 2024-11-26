@@ -1,6 +1,6 @@
 <?php
 
-function calculerTempsExecution()
+function get_execution_time()
 {
     $start = microtime(true);
     $time = $start - $_SERVER['REQUEST_TIME_FLOAT'];
