@@ -9,7 +9,11 @@ function my_get_weird_info()
             if ($i == $max) {
                 return 0;
             }
-            echo '$_GET[\'' . $key . '\'] = ' . $val . PHP_EOL;
+            if (is_string($val)) {
+                echo '$_GET[\'' . $key . '\'] = "' . $val . '"' . PHP_EOL;
+            } else {
+                echo '$_GET[\'' . $key . '\'] = ' . $val . PHP_EOL;
+            }
             $i++;
         }
     }
