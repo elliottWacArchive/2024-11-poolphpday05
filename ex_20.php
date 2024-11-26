@@ -10,11 +10,11 @@ function check_email()
             substr_count($email, '@') == 1 &&
             strpos($email, '.', strpos($email, '@')) !== false
         ) {
-            echo "courriel valide\\n";
+            echo "courriel valide\n";
         } else {
-            echo "courriel invalide\\n";
+            echo "courriel invalide\n";
         }
     } else {
-        echo "courriel invalide\\n";
+        echo "courriel invalide\n";
     }
 }
